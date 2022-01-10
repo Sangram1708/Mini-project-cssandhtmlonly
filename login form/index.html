@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="full">
+      <div class="maindiv">
+          <div class="lo-reg-btn">
+               <div id="background-tran"  class="log-sig-back"></div>
+               <button id="login-b" onclick="login()" class="loign-btn">Login</button>
+               <button id="sign-b" onclick="signup()" class="sign-btn">Sign up</button>
+          </div>
+          <div class="social-btn">
+             <img src="fb.png" alt="">
+             <img src="gp.png" alt="">
+             <img src="tw.png" alt="">
+          </div>
+        
+            <form id="login-slide" class="login-form">
+              <input type="text" name="" id="userid" placeholder="User Id">
+              <input type="text" name="" id="password" placeholder="Enter Password">
+              <label><input type="checkbox" id="checkbox" />Remember password</label>
+              <button class="login" >Login</button>
+            </form> 
+            <form id="signup-slide" class="login-form">
+              <input type="text" name="" id="userid" placeholder="User Id" required>
+              <input type="email" name="" id="emailid" placeholder="Email Id" required>
+              <input type="text" name="" id="password" placeholder="Enter Password" required>
+              <label><input type="checkbox" id="checkbox" />I agree with the terms and condition's</label>
+              <button class="login" >Sign-up</button>
+             </form>
+        
+         
+      </div>
+      </div>
+
+    <script>
+        let l=document.getElementById("login-slide");
+        let r=document.getElementById("signup-slide");
+        let z=document.getElementById("background-tran");
+
+        function signup(){
+            l.style.left="-400px";
+            r.style.left="50px";
+            z.style.left="125px";
+        }
+        function login(){
+            l.style.left="50px";
+            r.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+</html>
